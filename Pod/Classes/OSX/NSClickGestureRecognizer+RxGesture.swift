@@ -61,7 +61,7 @@ extension Factory where Gesture == GestureRecognizer {
     }
 }
 
-extension Reactive where Base: View {
+extension Reactive where Base: RxView {
 
     /**
      Returns an observable `NSClickGestureRecognizer` events sequence

@@ -30,7 +30,7 @@ import Foundation
         public typealias GestureRecognizerState = UIGestureRecognizerState
     #endif
     public typealias GestureRecognizerDelegate = UIGestureRecognizerDelegate
-    public typealias View = UIView
+    public typealias RxView = UIView
     public typealias Point = CGPoint
 #elseif os(OSX)
     import AppKit
@@ -53,9 +53,9 @@ public enum TargetView {
     case window
 
     /// The target view will be the given view
-    case this(View)
+    case this(RxView)
 
-    public func targetView(for gestureRecognizer: GestureRecognizer) -> View? {
+    public func targetView(for gestureRecognizer: GestureRecognizer) -> RxView? {
         switch self {
         case .view:
             return gestureRecognizer.view
