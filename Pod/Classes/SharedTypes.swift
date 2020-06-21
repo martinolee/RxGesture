@@ -38,7 +38,7 @@ import Foundation
     public typealias GestureRecognizer = NSGestureRecognizer
     public typealias GestureRecognizerState = NSGestureRecognizer.State
     public typealias GestureRecognizerDelegate = NSGestureRecognizerDelegate
-    public typealias View = NSView
+    public typealias RxView = NSView
     public typealias Point = NSPoint
 #endif
 

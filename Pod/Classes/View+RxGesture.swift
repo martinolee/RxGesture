@@ -21,7 +21,7 @@
 import RxSwift
 import RxCocoa
 
-extension Reactive where Base: View {
+extension Reactive where Base: RxView {
 
     /**
      Reactive wrapper for multiple view gesture recognizers.

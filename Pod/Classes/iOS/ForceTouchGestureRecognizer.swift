@@ -70,7 +70,7 @@ extension Factory where Gesture == GestureRecognizer {
 }
 
 @available(iOS 9.0, *)
-extension Reactive where Base: View {
+extension Reactive where Base: RxView {
 
     /**
      Returns an observable `ForceTouchGestureRecognizer` events sequence
